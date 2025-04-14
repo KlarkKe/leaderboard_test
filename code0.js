@@ -48,6 +48,10 @@ gdjs.MainMenuCode.GDNewTextObjects1= [];
 gdjs.MainMenuCode.GDNewTextObjects2= [];
 gdjs.MainMenuCode.GDNewTextObjects3= [];
 gdjs.MainMenuCode.GDNewTextObjects4= [];
+gdjs.MainMenuCode.GDleaderButtonObjects1= [];
+gdjs.MainMenuCode.GDleaderButtonObjects2= [];
+gdjs.MainMenuCode.GDleaderButtonObjects3= [];
+gdjs.MainMenuCode.GDleaderButtonObjects4= [];
 
 
 gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDPlayButtonObjects3Objects = Hashtable.newFrom({"PlayButton": gdjs.MainMenuCode.GDPlayButtonObjects3});
@@ -143,8 +147,46 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDRoolsObjects3Objects = Hashtable.newFrom({"Rools": gdjs.MainMenuCode.GDRoolsObjects3});
+};gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDleaderButtonObjects2Objects = Hashtable.newFrom({"leaderButton": gdjs.MainMenuCode.GDleaderButtonObjects2});
 gdjs.MainMenuCode.eventsList1 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("leaderButton"), gdjs.MainMenuCode.GDleaderButtonObjects2);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDleaderButtonObjects2Objects, runtimeScene, true, false);
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12193732);
+}
+}
+}
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("PlayButton"), gdjs.MainMenuCode.GDPlayButtonObjects2);
+{for(var i = 0, len = gdjs.MainMenuCode.GDPlayButtonObjects2.length ;i < len;++i) {
+    gdjs.MainMenuCode.GDPlayButtonObjects2[i].getBehavior("Animation").setAnimationName("Pressed");
+}
+}{gdjs.evtTools.sound.playSound(runtimeScene, "ButtonsClick.ogg", false, 100, 1);
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Leaderboard", false);
+}}
+
+}
+
+
+};gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDRoolsObjects3Objects = Hashtable.newFrom({"Rools": gdjs.MainMenuCode.GDRoolsObjects3});
+gdjs.MainMenuCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -237,7 +279,7 @@ if (isConditionTrue_0) {
 
 
 };gdjs.MainMenuCode.mapOfGDgdjs_9546MainMenuCode_9546GDGiftsObjects2Objects = Hashtable.newFrom({"Gifts": gdjs.MainMenuCode.GDGiftsObjects2});
-gdjs.MainMenuCode.eventsList2 = function(runtimeScene) {
+gdjs.MainMenuCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -329,7 +371,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.MainMenuCode.eventsList3 = function(runtimeScene) {
+};gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -352,7 +394,14 @@ gdjs.MainMenuCode.eventsList2(runtimeScene);
 }
 
 
-};gdjs.MainMenuCode.eventsList4 = function(runtimeScene) {
+{
+
+
+gdjs.MainMenuCode.eventsList3(runtimeScene);
+}
+
+
+};gdjs.MainMenuCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -388,7 +437,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.MainMenuCode.eventsList3(runtimeScene);
+gdjs.MainMenuCode.eventsList4(runtimeScene);
 }
 
 
@@ -445,8 +494,12 @@ gdjs.MainMenuCode.GDNewTextObjects1.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects2.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects3.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects4.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects1.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects2.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects3.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects4.length = 0;
 
-gdjs.MainMenuCode.eventsList4(runtimeScene);
+gdjs.MainMenuCode.eventsList5(runtimeScene);
 gdjs.MainMenuCode.GDTitleObjects1.length = 0;
 gdjs.MainMenuCode.GDTitleObjects2.length = 0;
 gdjs.MainMenuCode.GDTitleObjects3.length = 0;
@@ -495,6 +548,10 @@ gdjs.MainMenuCode.GDNewTextObjects1.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects2.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects3.length = 0;
 gdjs.MainMenuCode.GDNewTextObjects4.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects1.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects2.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects3.length = 0;
+gdjs.MainMenuCode.GDleaderButtonObjects4.length = 0;
 
 
 return;

@@ -8,7 +8,7 @@ gdjs.LeaderboardCode.GDplayerNameObjects1= [];
 gdjs.LeaderboardCode.GDplayerNameObjects2= [];
 
 
-gdjs.LeaderboardCode.userFunc0xf840b8 = function GDJSInlineCode(runtimeScene) {
+gdjs.LeaderboardCode.userFunc0x11b0d00 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 (function () {
   // Получаем объект Telegram WebApp из глобального контекста
@@ -56,7 +56,7 @@ let isConditionTrue_0 = false;
 {
 
 
-gdjs.LeaderboardCode.userFunc0xf840b8(runtimeScene);
+gdjs.LeaderboardCode.userFunc0x11b0d00(runtimeScene);
 
 }
 
